@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #dfdcdc;
+}
+
+.stop-watch {
+    width: 30rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px -2px rgb(120, 117, 117), -2px -2px 8px 0px rgb(255, 255, 255);
+}
+
+#watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.t {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2rem;
+    box-shadow: 2px 2px 8px -2px rgb(120, 117, 117), -2px -2px 8px 0px rgb(255, 255, 255);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button {
+    color: blue;
+    font-size: 1rem;
+    border: none;
+    width: 7rem;
+    padding: .5rem;
+    background: transparent;
+    border-radius: 40px;
+    box-shadow: 2px 2px 8px -2px rgb(120, 117, 117), -2px -2px 8px 0px rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: blue;
+    color: #dfdcdc;
+    transition: ease .3s;
+    box-shadow: 2px 2px 8px -2px rgb(0, 13, 255), -2px -2px 8px 0px rgb(145, 162, 195);
+}
+
+.time-list {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    width: 80%;
+}
+
+@media screen and (max-width:520px) {
+    .stop-watch {
+        width: 25rem;
+    }
+
+    .t {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width:445px) {
+    .stop-watch {
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .t {
+        width: 3.7rem;
+        height: 4rem;
+    }
+
+    button {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .stop-watch {
+        width: 17rem;
+    }
+    #watch{gap: 0.4rem;}
+
+    button {
+        width: 4.4rem;
+    }
+    .t{
+        height: 3.5rem;
+    }
+}

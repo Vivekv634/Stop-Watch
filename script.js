@@ -79,6 +79,6 @@ function stopWatch() {
         secs.innerHTML = secString;
         msecs.innerHTML = msString;
 
-        setTimeout(stopWatch, 1);
+        setTimeout(stopWatch, 10);
     }
 }

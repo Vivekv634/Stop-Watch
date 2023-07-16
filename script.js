@@ -59,6 +59,6 @@ function stopWatch() {
         mins.innerHTML = minString;
         secs.innerHTML = secString;
 
-        setTimeout(stopWatch, 1);
+        setTimeout(stopWatch, 1000);
     }
 }
